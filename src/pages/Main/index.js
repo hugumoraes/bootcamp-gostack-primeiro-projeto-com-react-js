@@ -15,7 +15,6 @@ class Main extends Component {
       newRepo: '',
       repositories: [],
       loading: false,
-      repoExists: true,
     };
   }
 
@@ -46,43 +45,21 @@ class Main extends Component {
 
     const { newRepo, repositories } = this.state;
 
-    try {
-      const response = await api.get(`/repos/${newRepo}`);
+    const response = await api.get(`/repos/${newRepo}`);
 
-      // repositories.map((repository) => {
-      //   if (response.data.full_name === repository.name)
-      //     throw new Error('Repositório já existe');
+    const data = {
+      name: response.data.full_name,
+    };
 
-      //   return false;
-      // });
-
-      const repoAlreadyExist = repositories.find(
-        (repository) => repository.name === response.data.full_name
-      );
-
-      if (repoAlreadyExist) throw new Error('Repositório já existe');
-
-      const data = {
-        name: response.data.full_name,
-      };
-
-      this.setState({
-        repositories: [...repositories, data],
-        newRepo: '',
-        loading: false,
-        repoExists: true,
-      });
-    } catch (err) {
-      this.setState({
-        repoExists: false,
-        loading: false,
-        newRepo: '',
-      });
-    }
+    this.setState({
+      repositories: [...repositories, data],
+      newRepo: '',
+      loading: false,
+    });
   };
 
   render() {
-    const { newRepo, repositories, loading, repoExists } = this.state;
+    const { newRepo, repositories, loading } = this.state;
 
     return (
       <Container>
@@ -91,7 +68,7 @@ class Main extends Component {
           Repositórios
         </h1>
 
-        <Form onSubmit={this.handleSubmit} repoExists={repoExists}>
+        <Form onSubmit={this.handleSubmit}>
           <input
             type="text"
             placeholder="Adicionar repositório"

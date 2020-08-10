@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">
     <img alt="GoStack" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-header.png" width="200px" />
 </h1>
@@ -67,3 +68,6 @@ Adicione apenas um botão de próxima página e página anterior. O botão de p�
 ---
 
 Feito com ♥ by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+=======
+# Editar
+>>>>>>> parent of 430febe... Challenge completed

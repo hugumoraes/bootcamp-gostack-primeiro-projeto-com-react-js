@@ -101,12 +101,3 @@ export const IssueList = styled.ul`
     }
   }
 `;
-
-export const PreviousButton = styled.button.attrs((props) => ({
-  disabled: props.firstPage,
-}))`
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: 0.6;
-  }
-`;
