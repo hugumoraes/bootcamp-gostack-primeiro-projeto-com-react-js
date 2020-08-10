@@ -20,7 +20,9 @@ export const Container = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const Form = styled.form.attrs((props) => ({
+  repoExists: props.repoExists,
+}))`
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -31,6 +33,7 @@ export const Form = styled.form`
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 16px;
+    border: ${(props) => (props.repoExists ? undefined : '1px solid red')};
   }
 `;
 
