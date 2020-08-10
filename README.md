@@ -6,8 +6,6 @@
   Desafio 5: Primeiro projeto com ReactJS
 </h3>
 
-<p align="center">“Para quem fica melhor a cada dia, ficar pronto é utopia”!</blockquote>
-
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-05?color=%2304D361">
 
@@ -20,12 +18,6 @@
   <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-05/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafio-05?style=social">
   </a>
-</p>
-
-<p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
 </p>
 
 ## :rocket: Sobre o desafio
@@ -71,14 +63,6 @@ https://api.github.com/repos/rocketseat/unform/issues?page=2
 ```
 
 Adicione apenas um botão de próxima página e página anterior. O botão de página anterior deve ficar desativado na primeira página.
-
-## 📅 Entrega
-
-Esse desafio **não precisa ser entregue** e não receberá correção, mas você pode ver o resultado do [código do desafio aqui](https://github.com/Rocketseat/bootcamp-gostack-desafio-05). Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
